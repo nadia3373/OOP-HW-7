@@ -187,6 +187,8 @@ class UserInterface():
                     relief="flat",
                     state="active",
                     text='',
+                    fg="white",
+                    bg="blue",
                     command=lambda row=i, col=j: self.game.current_player.move(self.game, row, col)
                 )
                 button.grid(row=i, column=j, sticky="news", padx=1, pady=1)
